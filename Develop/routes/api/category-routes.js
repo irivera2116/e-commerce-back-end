@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
   Category.findAll({}).then(allCategories => {
     console.log(allCategories);
     res.json(allCategories);
-  });
+  }).catch(err => res.status(400).json(err));
 });
 
 router.get('/:id', (req, res) => {
@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
-  Category.create(req.body).then(createdCategory => res.json(singleCategory)).catch(err => res.status(400).json(err));
+  Category.create(req.body).then(createdCategory => res.json(createdCategory)).catch(err => res.status(400).json(err));
 });
 
 router.put('/:id', (req, res) => {
