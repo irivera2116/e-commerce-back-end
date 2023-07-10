@@ -43,7 +43,7 @@ This image shows the GET function working on the tags section.
 
 Link to github repository: https://github.com/irivera2116/e-commerce-back-end
 
-Link to video demo: 
+Link to video demo: https://drive.google.com/file/d/1PaUyKvojUWAGVnB5Xbyf7Es9_e_DPE3s/view
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
